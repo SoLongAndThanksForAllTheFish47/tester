@@ -7,6 +7,7 @@ Created on Tue Mar 17 08:41:06 2026
 
 Diesese Programm berechnet den Betrag der Impedanz einer R,L,C Serienschaltung.
 """
+
 import math
 
 from utils import induktiverBlindwiderstand
@@ -24,9 +25,11 @@ def main():
     resistanz = float(input("Resistanz in Ohm: "))
 
     # Impedanz berechen
-    reaktanz = abs(induktiverBlindwiderstand(
-        frequenz, induktivitaet) - kapzitiverBlindwiderstand(frequenz, kapazitaet))
-    impedanz = math.sqrt(resistanz*resistanz + reaktanz*reaktanz)
+    reaktanz = abs(
+        induktiverBlindwiderstand(frequenz, induktivitaet)
+        - kapzitiverBlindwiderstand(frequenz, kapazitaet)
+    )
+    impedanz = math.sqrt(resistanz * resistanz + reaktanz * reaktanz)
 
     # Ergebnisse ausgeben
     print("Die Impedanz beträgt:", impedanz, "Ohm")

@@ -5,6 +5,7 @@ Created on Tue Mar 17 10:22:44 2026
 
 @author: raphaelelser
 """
+
 from utils import induktiverBlindwiderstand
 from utils import kapzitiverBlindwiderstand
 
@@ -16,4 +17,4 @@ def test_induktiverBlindwiderstand():
 
 def test_kapzitiverBlindwiderstand():
     """Test kapzitiverBlindwiderstand"""
-    assert kapzitiverBlindwiderstand(0, 0) == float('inf')
+    assert kapzitiverBlindwiderstand(0, 0) == float("inf")
