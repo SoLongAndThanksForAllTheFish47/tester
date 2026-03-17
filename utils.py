@@ -15,16 +15,17 @@ def induktiverBlindwiderstand(frequenz, induktivitaet):
     lreaktanz = 2 * Pi * abs(frequenz) * abs(induktivitaet)
     return lreaktanz
 
+
 def kapzitiverBlindwiderstand(frequenz, kapazitaet):
     """Kapazitiven Blindwiderstand berechen"""
     Pi = math.pi
     if (frequenz > 0) and (kapazitaet > 0):
-            creaktanz = 1 / (2 * Pi * abs(frequenz) * abs(kapazitaet))
-            return creaktanz 
+        creaktanz = 1 / (2 * Pi * abs(frequenz) * abs(kapazitaet))
+        return creaktanz
     if (frequenz == 0):
-            return float('inf') 
+        return float('inf')
     if (kapazitaet == 0):
-            return float('inf')    
-    
-    else: return 0
-    
+        return float('inf')
+
+    else:
+        return 0

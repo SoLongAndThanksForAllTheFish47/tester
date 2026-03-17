@@ -12,11 +12,8 @@ from utils import kapzitiverBlindwiderstand
 def test_induktiverBlindwiderstand():
     """Test induktiverBlindwiderstand"""
     assert induktiverBlindwiderstand(0, 0) == 0
-    
-    
-    
+
+
 def test_kapzitiverBlindwiderstand():
     """Test kapzitiverBlindwiderstand"""
     assert kapzitiverBlindwiderstand(0, 0) == float('inf')
-    
-    

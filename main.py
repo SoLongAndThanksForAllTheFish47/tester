@@ -12,24 +12,21 @@ import math
 from utils import induktiverBlindwiderstand
 from utils import kapzitiverBlindwiderstand
 
+
 def main():
     """Hauptprogramm"""
 
     print("_Dieses Programm berechnet die Impedanz einer R,L,C Serienschaltung_")
-   
-    
+
     frequenz = float(input("Frequenz in Hz: "))
     induktivitaet = float(input("Induktivität in Henry: "))
     kapazitaet = float(input("Kapazität in Farad: "))
     resistanz = float(input("Resistanz in Ohm: "))
-    
-    
 
     # Impedanz berechen
-    reaktanz = abs(induktiverBlindwiderstand(frequenz, induktivitaet) - kapzitiverBlindwiderstand(frequenz, kapazitaet))
+    reaktanz = abs(induktiverBlindwiderstand(
+        frequenz, induktivitaet) - kapzitiverBlindwiderstand(frequenz, kapazitaet))
     impedanz = math.sqrt(resistanz*resistanz + reaktanz*reaktanz)
-
-
 
     # Ergebnisse ausgeben
     print("Die Impedanz beträgt:", impedanz, "Ohm")
