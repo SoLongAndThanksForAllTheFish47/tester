@@ -29,3 +29,9 @@ def kapzitiverBlindwiderstand(frequenz, kapazitaet):
 
     else:
         return 0
+
+
+def sqrter(resistanz, reaktanz):
+    """Betrag berechnen"""
+    impedanz = math.sqrt(resistanz * resistanz + reaktanz * reaktanz)
+    return impedanz

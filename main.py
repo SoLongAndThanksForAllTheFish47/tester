@@ -8,10 +8,9 @@ Created on Tue Mar 17 08:41:06 2026
 Diesese Programm berechnet den Betrag der Impedanz einer R,L,C Serienschaltung.
 """
 
-import math
-
 from utils import induktiverBlindwiderstand
 from utils import kapzitiverBlindwiderstand
+from utils import sqrter
 
 
 def main():
@@ -29,8 +28,7 @@ def main():
         induktiverBlindwiderstand(frequenz, induktivitaet)
         - kapzitiverBlindwiderstand(frequenz, kapazitaet)
     )
-    impedanz = math.sqrt(resistanz * resistanz + reaktanz * reaktanz)
-
+    impedanz = sqrter(resistanz, reaktanz)
     # Ergebnisse ausgeben
     print("Die Impedanz beträgt:", impedanz, "Ohm")
 
