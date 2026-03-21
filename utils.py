@@ -21,7 +21,7 @@ def kapzitiverBlindwiderstand(frequenz, kapazitaet):
     Pi = math.pi
     if (frequenz > 0) and (kapazitaet > 0):
         creaktanz = 1 / (2 * Pi * abs(frequenz) * abs(kapazitaet))
-        return creaktanz 
+        return creaktanz
     else:
         return float("inf")
 
