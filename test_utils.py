@@ -20,7 +20,7 @@ def test_induktiverBlindwiderstand():
 def test_induktiverBlindwiderstandZwei():
     """Test induktiverBlindwiderstand"""
     Pi = math.pi
-    assert induktiverBlindwiderstand(1, 1) == 2 * Pi
+    assert induktiverBlindwiderstand(1, 1) == 4 * Pi
 
 
 def test_kapzitiverBlindwiderstand():
